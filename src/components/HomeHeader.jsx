@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { TbGridDots } from 'react-icons/tb';
 
@@ -13,8 +14,14 @@ export default function HomeHeader() {
                     className="hover:underline">
                     Images
                 </Link>
+                <Image src="https://icon-library.com/images/laboratory-icon/laboratory-icon-5.jpg"
+                    alt="Search Lab"
+                    width={45} height={35}
+                    className="bg-transparent hover:bg-gray-200 rounded-full p-0"
+                />
                 <TbGridDots className="bg-transparent hover:bg-gray-200 rounded-full p-2 text-4xl" />
-                <button className="bg-blue-500 text-white px-6 py-2 font-medium rounded-md hover:brightness-105 hover:shadow-md transition-shadow">Sign in</button>
+                <button className="bg-blue-500 text-white px-6 py-2 font-medium rounded-md 
+                hover:brightness-105 hover:shadow-md transition-shadow">Sign in</button>
             </div>
         </header>
     )
