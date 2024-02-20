@@ -16,7 +16,7 @@ export default function HomeHeader() {
                 </Link>
                 <Image src="https://icon-library.com/images/laboratory-icon/laboratory-icon-5.jpg"
                     alt="Search Lab"
-                    width={45} height={35}
+                    width={45} height={35} style={{ height: "auto", width: "auto" }}
                     className="bg-transparent hover:bg-gray-200 rounded-full p-0"
                 />
                 <TbGridDots className="bg-transparent hover:bg-gray-200 rounded-full p-2 text-4xl" />
