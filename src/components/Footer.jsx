@@ -1,5 +1,4 @@
-import React from 'react'
-import CountryLookup from './CountryLookup'
+import CountryLookup from './CountryLookup';
 
 export default function Footer() {
     return (
