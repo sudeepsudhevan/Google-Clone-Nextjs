@@ -1,10 +1,12 @@
 import HomeHeader from "@/components/HomeHeader";
 import HomeSearch from "@/components/HomeSearch";
 import Image from "next/image";
+import { Suspense } from "react";
 
 export default function Home() {
   return (
     <>
+    <Suspense fallback={<div>Loading...</div>}>
       <HomeHeader />
       <div className="flex flex-col items-center mt-24">
         <Image
@@ -17,6 +19,7 @@ export default function Home() {
         />
         <HomeSearch />
       </div>
+      </Suspense>
     </>
   );
 }
