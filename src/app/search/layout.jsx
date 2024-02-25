@@ -1,4 +1,3 @@
-import React from 'react';
 import '../../app/globals.css';
 import SearchHeader from '@/components/SearchHeader';
 

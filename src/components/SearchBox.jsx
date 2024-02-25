@@ -17,7 +17,6 @@ export default function SearchBox() {
         router.push(`/search/web?searchTerm=${term}`)
     }
     return (
-        <Suspense>
             <form onSubmit={handleSubmit} className="flex border border-gray-200 rounded-full shadow-lg px-6 py-3 ml-10 mr-5 flex-grow 
         max-w-3xl items-center">
                 <input type="text" className="w-full focus:outline-none" value={term}
@@ -29,6 +28,5 @@ export default function SearchBox() {
                 <AiOutlineSearch className="text-2xl hidden sm:inline-flex text-blue-500 cursor-pointer"
                     onClick={handleSubmit} />
             </form>
-        </Suspense>
     )
 }

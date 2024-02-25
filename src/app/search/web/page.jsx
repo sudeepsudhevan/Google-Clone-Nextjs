@@ -1,4 +1,3 @@
-"use client"
 import Link from 'next/link';
 import React, { Suspense } from 'react'
 import WebSearchResults from '../../../components/WebSearchResults';
@@ -15,7 +14,7 @@ export default async function WebSearchPage({ searchParams }) {
 
     if (!results) {
         return (
-            <Suspense>
+        
             <div className='flex flex-col justify-center items-center pt-10'>
                 <h1 className='text-3xl mb-4'>No results found for {searchParams.searchTerm}</h1>
                 <p className='text-lg'>Try searching for something else </p>
@@ -23,7 +22,7 @@ export default async function WebSearchPage({ searchParams }) {
                     Home
                 </Link>
             </div>
-            </Suspense>
+            
         )
     }
 

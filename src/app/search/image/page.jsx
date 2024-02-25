@@ -1,4 +1,3 @@
-"use client"
 import ImageSearchResults from '@/components/ImageSearchResults';
 import Link from 'next/link';
 import React, { Suspense } from 'react'
@@ -16,7 +15,7 @@ export default async function ImageSearchPage({ searchParams }) {
 
     if (!results) {
         return (
-            <Suspense>
+        
             <div className='flex flex-col justify-center items-center pt-10'>
                 <h1 className='text-3xl mb-4'>No results found for {searchParams.searchTerm}</h1>
                 <p className='text-lg'>Try searching for something else </p>
@@ -24,7 +23,7 @@ export default async function ImageSearchPage({ searchParams }) {
                     Home
                 </Link>
             </div>
-            </Suspense>
+            
         )
     }
 

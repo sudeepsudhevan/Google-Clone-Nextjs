@@ -15,7 +15,7 @@ export default function SearchHeaderOptions() {
     }
 
     return (
-        <Suspense>
+    
             <div className="flex space-x-2 select-none border-b w-full justify-center lg:justify-start 
         lg:pl-52 text-gray-700 text-sm">
 
@@ -30,6 +30,6 @@ export default function SearchHeaderOptions() {
                     <p>Images</p>
                 </div>
             </div >
-        </Suspense>
+        
     )
 }
